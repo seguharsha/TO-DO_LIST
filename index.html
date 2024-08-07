@@ -1,0 +1,192 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+        <title>To do List</title>
+    <style>
+    .advanced {
+                width: 300px;
+                padding: 10px;
+                margin: 5px;
+                font-size: 16px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(10px);
+                color: white;
+            }
+    body{
+        font-family: 'Zain', 'sans-serif';
+            margin: 0;
+            padding: 0;
+            background: #000428;
+            background: -webkit-linear-gradient(to right, #004e92, #000428);
+            background: linear-gradient(to right, #004e92, #000428);
+            color: white;
+    }
+            .input-box::placeholder {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            .outer-container{
+                width: 100%;
+                height:70px;
+               
+                display: flex;
+                justify-content: center;
+                background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);  
+
+                align-items: center;
+                }
+                .inner-container{
+                    display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);  
+
+                }
+            
+
+
+    .button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    }
+
+
+    #resultContainer {
+                margin: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            .task {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                width:fit-content;
+
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 5px;
+                margin-bottom: 10px;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                height:max-content;
+                width:max-conten
+            }
+            .task-buttons button {
+                margin: 10px;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+             .done {
+                background-color: #28a745;
+                color: white;
+                margin:10px;
+            }
+             .incomplete {
+                background-color: #dc3545;
+                color: white;
+                margin:10px;
+
+            }
+         .important {
+                background-color: #ffc107;
+                color: black;
+                margin:10px;
+
+            }
+
+    .button-64:active,
+    .button-64:hover {
+    outline: 0;
+    }
+
+    .button-64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 12px 10px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    }
+
+    .button-64:hover span {
+    background: none;
+    }
+
+    @media (min-width: 768px) {
+    .button-64 {
+        font-size: 18px;
+        min-width: 196px;
+    }
+    }
+    .but{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);  
+    height: 80px;
+    }
+
+    h1{
+        padding: 0%;
+        margin: 0%;
+    }
+#resultContainer{
+ position: absolute;
+    left:40%;
+
+}
+.task .span
+{
+    font-size:200px;   
+}
+    </style>
+    </head>
+    <body>
+            <div class="container">
+                <div class="outer-container">
+                    <h1>TO DO LIST</h1>
+                </div>
+                <div class="inner-container">
+                    <input class="advanced" id="taskadder" type="text" placeholder="INSERT A TASK">
+                </div>
+                <div class="but">    
+                    <button class="button-64" id="sender" role="button"><span class="text"> ADD A TASK</span></button>
+                </div>
+                    
+                <div id="resultContainer">
+
+                </div>
+            </div>
+            <script src="./index.js"></script>
+
+    </body>
+    </html>
